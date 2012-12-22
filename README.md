@@ -31,6 +31,9 @@ Linkypedia install:
 * cp settings.py.tmpl settings.py
 * add database credentials to linkypedia/settings.py
 * python manage.py syncdb
+
+* pythin manage.py migrate
+
 * python manage.py runserver
 * python manage.py add_website http://www.loc.gov/
 * python manage.py crawl # look for wikipedia articles referencing websites
