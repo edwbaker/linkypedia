@@ -11,7 +11,18 @@ organisation can monitor it's Wikipedia impact over time·
 
 Setup (linkypedia)
 ------------------
+The following are what I need to run on Ubuntu 12.10 to get linkypedia 
+installed
+* sudo apt-get install libmysqlclient-dev
+* sudo apt-get install python-pip python-dev
+* sudo easy_install -U distribute
+* sudo install -U pip
 
+If individual packages fail they can be installed by, e.g.:
+* sudo easy_install django celery
+* sudo easy_install django-celery
+
+Linkypedia install:
 * git clone https://github.com/edwbaker/linkypedia.git
 * cd linkypedia
 * pip install -r requirements.pip (Doesn't always work - some python packages may need to be  installed manually using easy_install)
