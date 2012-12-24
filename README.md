@@ -25,7 +25,8 @@ If individual packages fail they can be installed by, e.g.:
 Linkypedia install:
 * git clone https://github.com/edwbaker/linkypedia.git
 * cd linkypedia
-* pip install -r requirements.pip (Doesn't always work - some python packages may need to be  installed manually using easy_install)
+* pip install -r requirements.pip (Doesn't always work - some python packages may need to be  installed manually using easy_install - copy and past line below)
+* (sudo easy_install MySQL-python django celery django-celery south BeautifulSoup lxml irc rdflib billiard kombu pytz isodate anyjson amqp)
 * create database and user/password permissions
 * cd linkypedia
 * cp settings.py.tmpl settings.py
