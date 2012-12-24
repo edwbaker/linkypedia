@@ -79,7 +79,12 @@ foreach ($pages as $page) {
       $views = get_monthly_stats($lang, $page['page'], $year, $month);
       $total_views += $views;
       print $year.$month.': '.$views. "($total_views)\n";
-      //TODO: Create a table and store these values for finer grain stats
+      //Save monthly stats to database
+      $url = mysqli_real_escape_string($db, $page['url']);
+      $sql = "DELETE FROM stats_wikipiediaviews WHERE url = '$url' AND year = '$year' AND month = '$month';";
+      mysqli_query($db, $sql);
+      $sql = "INSERT INTO stats_wikipiediaviews (url, year, month, views) VALUES ('$url', '$year', '$month', '$views');";
+      mysqli_query($db, $sql); 
     }
     //TODO: Check if the url exists(?)
     $sql = "UPDATE web_wikipediapage SET views = '$total_views' WHERE url = '".$page['url']."';";
