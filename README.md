@@ -16,7 +16,7 @@ installed
 * sudo apt-get install libmysqlclient-dev
 * sudo apt-get install python-pip python-dev
 * sudo easy_install -U distribute
-* sudo install -U pip
+* sudo pip install -U pip
 
 If individual packages fail they can be installed by, e.g.:
 * sudo easy_install django celery
