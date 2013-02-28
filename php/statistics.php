@@ -2,7 +2,7 @@
 <?php
 
 //Connect to database
-$db = mysqli_connect('127.0.0.1', 'edwab', 'rkcbsdwg', 'nhm_wiki');
+$db = mysqli_connect('localhost', 'linkypedia', 'password', 'linkypedia');
 
 $url_matches = array(
   'User pages' => 'wikipedia.org/wiki/User:',
