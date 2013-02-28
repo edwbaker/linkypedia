@@ -45,6 +45,8 @@ Linkypedia install:
 
 Setup - Addons
 
+* After crawl and periodically run php/page_stats.php to populate page views table
+
 License
 -------
 * CC0 - inherited from the original linkypedia project
