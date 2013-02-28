@@ -44,7 +44,7 @@ Linkypedia install:
 * optionally you can deploy with apache+mod_wsgi using conf/linkypedia.conf
 
 Setup - Addons
-
+* run php/setup.php
 * After crawl and periodically run php/page_stats.php to populate page views table
 
 License
